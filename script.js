@@ -1,8 +1,9 @@
 // Assignment Code
-let lowercase = window.prompt("Would you like to use lower case?");
+let lowercase = window.confirm("Would you like to use lower case?");
 let uppercase = window.prompt("Would you like to use upper case?");
 let numbers = window.prompt("Would you like to use numbers?");
 let symbols = window.prompt("Would you like to use upper case?");
+let passlength = window.prompt("Length of password?");
 
 
 let generateBtn = document.querySelector("#generate");
