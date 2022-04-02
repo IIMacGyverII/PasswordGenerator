@@ -1,10 +1,16 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+let lowercase = window.prompt("Would you like to use lower case?");
+let uppercase = window.prompt("Would you like to use upper case?");
+let numbers = window.prompt("Would you like to use numbers?");
+let symbols = window.prompt("Would you like to use upper case?");
+
+
+let generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  let password = generatePassword();
+  let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
