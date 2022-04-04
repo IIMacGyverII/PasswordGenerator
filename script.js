@@ -15,7 +15,7 @@ let uppercase = window.confirm("Would you like to use upper case?");
 let numbers = window.confirm("Would you like to use numbers?");
 let symbols = window.confirm("Would you like to use upper case?");
 let length = window.prompt("Length?");
-  // let person = prompt("Length of password?");
+
 
 const randomFunc = {
 	lower: genRandomLower,
@@ -23,7 +23,7 @@ const randomFunc = {
 	number: genRandomNumber,
 	symbol: genRandomSymbol,
 }
-let typsecount = lowercase + uppercase;
+
 
 // change this to window prompt
 generate.addEventListener('click', () => {
@@ -33,12 +33,11 @@ generate.addEventListener('click', () => {
 	// resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
   console.log(length)
   console.log(lowercase + uppercase + numbers +symbols);
-  for(let i=0; i<length; i+=typesCount) {
-		typesArr.forEach(type => {
-			const funcName = Object.keys(type)[0];
-			generatedPassword += randomFunc[funcName]();
-		});
-	}
+  for(let i=0; i < length; i++) {
+  
+    console.log("Do this by the length entered, " + lowercase[i] + "!");
+  }
+
 
 });
 
